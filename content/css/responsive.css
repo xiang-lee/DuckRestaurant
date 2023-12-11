@@ -1,0 +1,32 @@
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  .introduction {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .social-section {
+    display: table;
+    margin: 0 auto;
+  }
+
+  .map-section {
+    height: 300px;
+  }
+}

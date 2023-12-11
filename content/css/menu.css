@@ -1,0 +1,41 @@
+/* Menu Section */
+.menu {
+  padding: 100px 0 60px 0;
+}
+.menu h4 {
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+.menu .menu-section hr {
+  margin: 0 auto;
+}
+.menu .menu-section {
+  margin: 0 20px 80px;
+}
+.menu .menu-section-title {
+  display: block;
+  font-weight: 400;
+  color: #444;
+  margin: 20px 0;
+  text-align: center;
+}
+.menu .menu-item {
+  margin: 45px 0;
+  font-size: 18px;
+}
+.menu .menu-item-name {
+  font-weight: 400;
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 10px;
+}
+.menu .menu-item-description {
+  font-size: 15px;
+  width: 85%;
+}
+.menu .menu-item-price {
+  float: right;
+  font-weight: 400;
+  color: #555;
+  margin-top: -36px;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "cn-duck",
+  "version": "1.0.0",
+  "description": "CN Duck",
+  "main": "index.js",
+  "author": "MyCloudPA",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.5",
+    "prettier": "^2.4.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4"
+  }
+}

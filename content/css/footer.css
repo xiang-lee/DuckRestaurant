@@ -1,0 +1,13 @@
+.footer-container {
+  background-color: black;
+  padding: 1em;
+  color: white;
+}
+.footer-container .internal-links a {
+  color: white;
+  font-size: 12px;
+}
+
+.footer-container .internal-links a:before {
+  content: "• ";
+}

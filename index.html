@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+@@include('./html-sections/head.html')
+
+<body>
+  @@include('./html-sections/fixed-header.html')
+  <div class="mb-5 my-5 container header-video">
+    <video style="width: 100%; filter: drop-shadow(3px 3px 5px);" controls autoplay muted loop>
+      <source src="https://cn-duck.s3.eu-west-1.amazonaws.com/intro-video.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="container">
+    <div class="section-heading mb-4">
+      <h2>About CN Duck</h2>
+    </div>
+    <div class="row mb-5 mt-4">
+      <div class="col-md-6">
+        <div class="introduction">
+          <h1>
+            CN Duck delivers vintage Chinese food that is full of flavor and
+            personality. Our classic "bullet oven" cooking process, which
+            evenly distributes heat around our locally sourced meat,. This
+            gives the meat a rich, juicy texture, which is then coated in a
+            delectable shimmering skin that makes anyone's mouth water.
+            <br /><br />
+            Our team of talented chefs strives to present our patrons with an
+            authentic Chinese dining experience that is unrivaled in Dublin.
+            <br /><br />
+            In our vintage industrial style restaurant, inspired by Shanghai
+            in the 1930s, enjoy our Duck, Pork, and Chicken served with our
+            meticulously designed spices and sauces that will blow your
+            taste-bud's mind.
+          </h1>
+
+          <a href="https://my.flipdish.com/cnduck/order" target="_blank">
+            <button class="btn order-btn mb-3 mt-3">Order Online</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6 about-img">
+        <img src="/content/images/home/about_cn_duck.jpg" alt="CN Duck front door at 12 Ranelagh, Dublin 6"
+          class="img-fluid" />
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5 m-1">
+    <div class="col-md-3 col-sm-12 food-thumbnail">
+      <img src="/content/images/gallery/gallery1.png" alt="Interior of CN Duck restaurant" class="img-fluid" />
+    </div>
+    <div class="col-md-3 col-sm-12 food-thumbnail">
+      <img src="/content/images/gallery/gallery2.png" alt="Tasty roasted duck dish" class="img-fluid" />
+    </div>
+    <div class="col-md-3 col-sm-12 food-thumbnail">
+      <img src="/content/images/gallery/gallery3.png" alt="Delicious double combo roast meat (duck and pork)"
+        class="img-fluid" />
+    </div>
+    <div class="col-md-3 col-sm-12 food-thumbnail">
+      <img src="/content/images/gallery/gallery4.png" alt="Delicious char sui rice bowl (duck)" class="img-fluid" />
+    </div>
+  </div>
+
+  <div class="container" id="menu">
+    <div class="section-heading mb-3">
+      <h2>Our Menu</h2>
+    </div>
+
+    <div class="row mb-5 mt-3">
+      <div class="col-12 p-1 menu-wrapper">
+        <img src="/content/images/home/menu1_new.jpeg"
+          alt="CN Duck menu: Aisan Bites | Roast Meat | Rice Bowl | Wok Fried Ric" class="img-fluid" />
+      </div>
+    </div>
+    <div class="row mb-5 mt-3">
+      <div class="col-12 p-1 menu-wrapper">
+        <img src="/content/images/home/menu2_new.jpeg"
+          alt="CN Duck menu: Noodle Soup | Side | Stir Fried | Wok Fried Noodle | Drinks" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+  <div class="container tab_contact" id="booking">
+    <section class="book-table" id="book_online">
+      <div class="container-fluid">
+        <div class="row">
+          <h1 class="main-heading book-table-head">BOOK YOUR TABLE <span>ONLINE</span></h1>
+          <div class="online-table-book">
+            <div class="form-outer">
+              <div class="col-sm-12 offset-sm-3">
+                <div id="successfulMessage" class="d-none">
+                  <h2 class="text-center">Thanks For Your Booking!</h2>
+                  <p class="alert alert-success text-center">
+                    Staff will contact you to confirm booking within 24 hours
+                  </p>
+                </div>
+                <div id="failedMessage" class="alert alert-danger d-none">
+                  Cannot send your message, please try again later.
+                </div>
+                <form id="bookTableFrom" class="book-table-form">
+                  <div class="form-group">
+                    <label for="name" class="col-md-4 col-form-label">Name<span>*</span></label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name" required maxlength="20" />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="col-md-4 col-form-label">Phone Number<span>*</span></label>
+                    <input type="text" id="telNumber" class="form-control" placeholder="Phone Number" required
+                      maxlength="50" />
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail" class="col-md-4 col-form-label">Email Address<span>*</span></label>
+                    <input type="email" id="email" class="form-control" placeholder="Email" required maxlength="50" />
+                  </div>
+                  <div class="form-group">
+                    <label for="inputdate" class="col-md-4 col-form-label">Date<span>*</span></label>
+                    <input id="date" type="text" class="form-control book-table-date" required placeholder="Date"
+                      autocomplete="off" />
+                  </div>
+                  <div class="form-group">
+                    <label for="inputdate" class="col-md-4 col-form-label">Time<span>*</span></label>
+                    <div class="col-sm-12 col-md-8 time_field pl-0">
+                      <select id="hours" class="form-control time-book" required>
+                        <option value="12">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                      </select>
+                      <select id="minutes" class="form-control time-book" required>
+                        <option value="00">00</option>
+                        <option value="">15</option>
+                        <option value="">30</option>
+                        <option value="">45</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputguest" class="col-md-4 col-form-label">Number of Guest<span>*</span></label>
+
+                    <input id="numOfGuests" type="number" required class="form-control"
+                      placeholder="Number of Guests" />
+                  </div>
+                  <div class="form-group">
+                    <label for="inputguest" class="col-md-4 col-form-label">Other Inquiries<span>*</span></label>
+
+                    <textarea id="otherEnquiries" cols="30" rows="3" class="form-control"
+                      placeholder="Other Enquiries"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <p>
+                      <b>Please note:</b> For table bookings within 24 hours, you need to contact the restaurant
+                      directly. Online bookings using the above form will be confirmed by phone if booking request is
+                      accepted. Thank you
+                      very much, CN Duck.
+                    </p>
+                  </div>
+                  <div id="mail-status"></div>
+                  <div class="form-group">
+                    <input id="sendButton" type="submit" value="Make a Booking" class="btn btn-primary py-3 px-5" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="container contact" id="contact">
+    <div class="section-heading mb-4">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="row mb-5 mt-4">
+      <div class="col-md-3">
+        <div class="contact-item">
+          <h3>Phone / Email</h3>
+          <a href="tel:015552222">015552222</a> /
+          <a href="tel:015552233">015552233</a>
+          <br />
+          <a href="mailto:info@cnduck.ie">info@cnduck.ie</a>
+        </div>
+        <div class="contact-item">
+          <h3>Location</h3>
+          12 Ranelagh, Dublin 6.
+        </div>
+        <div class="contact-item">
+          <h3>Hours</h3>
+          <div>Monday : CLOSED</div>
+          <div>Tuesday : 12 - 10PM</div>
+          <div>Wednesday : 12 - 10PM</div>
+          <div>Thursday : 12 - 11PM</div>
+          <div>Friday : 12 - 11PM</div>
+          <div>Saturday : 12 - 11PM</div>
+          <div>Sunday : 12 - 10PM</div>
+
+          <div class="social-section">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/CN-Duck-111489498097523" target="_blank">
+                  <span class="social-icon social-facebook"><i class="fa fa-facebook"></i></span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/cnduck.ireland" target="_blank">
+                  <span class="social-icon social-instagram"><i class="fa fa-instagram"></i></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <iframe class="map-section"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.309782641844!2d-6.255577645991191!3d53.326203595295446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670ea5cf0688b7%3A0xfcc258913d2e9e7!2s12%20Ranelagh%2C%20Dublin%206%2C%20D06%20P9W8!5e0!3m2!1sen!2sie!4v1641810554564!5m2!1sen!2sie"
+          style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  @@include('./html-sections/footer.html')
+</body>
+
+</html>
